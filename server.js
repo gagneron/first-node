@@ -13,6 +13,7 @@ http.createServer(function(request, response){
 	fs.readFile('index.html', function(err, data){
 		response.writeHead(200,{'Content-type':'text/html'}); // header, 200 is a normal request, can take a set of options:content-type
 		response.end(data);
+
 	});
 
 }).listen(1999, '127.0.0.1'); //which port to listen to
